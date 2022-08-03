@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+                git 'https://github.com/Sri-Udaya/MyNewProject.git'
             }
         }
         stage('build WAR') {
 	    steps {
-
+		git 'https://github.com/Sri-Udaya/MyNewProject.git'
 	    }
             
         }
