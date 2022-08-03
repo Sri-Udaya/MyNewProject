@@ -11,7 +11,7 @@ pipeline {
 		 mvnHome = tool 'maven3'
 	    }
 	    steps {
-		bat "${env.mvnHome}/bin/mvn package"            
+		sh "${env.mvnHome}/bin/mvn package"            
 	     }
         }
     }
