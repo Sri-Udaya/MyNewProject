@@ -7,6 +7,9 @@ pipeline {
             }
         }
         stage('build WAR') {
+	    steps {
+
+	    }
             
         }
     }
