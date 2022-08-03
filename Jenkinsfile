@@ -8,7 +8,8 @@ pipeline {
         }
         stage('build WAR') {
 	    steps {
-		git 'https://github.com/Sri-Udaya/MyNewProject.git'
+		def mvnHome = tool name: 'maven3', type: 'maven'
+		bat = "${mvnHome}/bin/mvn package"
 	    }
             
         }
