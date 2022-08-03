@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build WAR') {
 	    steps {
-		@def mvnHome = tool name: 'maven3', type: 'maven'
+		def mvnHome = "tool name: 'maven3', type: 'maven'"
 		bat "${mvnHome}/bin/mvn package"
 	    }
             
